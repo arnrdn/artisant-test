@@ -1,0 +1,180 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+}
+
+.App {
+  padding: 1.6rem;
+}
+
+@media only screen and (min-width: 62.5em) {
+  .App {
+    padding: 3.2rem;
+  }
+}
+
+.header-1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.paragraph {
+  color: #828282;
+  font-size: 1.4rem;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.cards__filter {
+  margin: 1.2rem 0;
+  width: 13rem;
+  font-size: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.cards__list {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(30rem, max-content)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(30rem, -webkit-max-content));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, max-content));
+  gap: 1.6rem 3.2rem;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.card {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 10px 14px 0px rgba(0, 0, 0, 0.071);
+  box-shadow: 0px 10px 14px 0px rgba(0, 0, 0, 0.071);
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card__image {
+  position: relative;
+  background-size: cover;
+  height: 40rem;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.2)),
+      to(rgba(0, 0, 0, 0.5))
+    ),
+    url('/src/img/product-img.png');
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url('/src/img/product-img.png');
+}
+
+.card__product-info {
+  position: absolute;
+  padding: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  z-index: 10;
+  height: 100%;
+  top: 0;
+  width: 70%;
+}
+
+.card__product-stock {
+  padding: 1.6rem;
+  color: #737373;
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.card__product-stock--bold {
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.card__product-price {
+  text-align: end;
+}
+
+.card__product-price--bold {
+  color: #0040e5;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.card__author {
+  color: #f3f3f3;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.card__author--bold {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.card__name {
+  color: #fff;
+  font-size: 1.8rem;
+}
+/*# sourceMappingURL=main.css.map */
