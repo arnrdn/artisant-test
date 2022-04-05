@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/artisant-test/static/css/main.23fa514c.css",
+    "main.js": "/artisant-test/static/js/main.82fb73e9.js",
+    "static/media/product-img.png": "/artisant-test/static/media/product-img.9f4811450a2cb2123431.png",
+    "index.html": "/artisant-test/index.html",
+    "main.23fa514c.css.map": "/artisant-test/static/css/main.23fa514c.css.map",
+    "main.82fb73e9.js.map": "/artisant-test/static/js/main.82fb73e9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.23fa514c.css",
+    "static/js/main.82fb73e9.js"
+  ]
+}
