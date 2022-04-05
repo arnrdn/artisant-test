@@ -7,12 +7,12 @@
 *::before,
 *::after {
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 62.5%;
 }
 
@@ -24,6 +24,12 @@ body {
 
 .App {
   padding: 1.6rem;
+}
+
+@media only screen and (max-width: 62.5em) {
+  .App {
+    padding: 3.2rem;
+  }
 }
 
 .header-1 {
@@ -46,8 +52,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   gap: 1.2rem;
 }
 
@@ -59,30 +65,30 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .cards__list {
   list-style: none;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(30rem, max-content))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(30rem, -webkit-max-content));
-      grid-template-columns: repeat(auto-fit, minmax(30rem, max-content));
+  -ms-grid-columns: (minmax(30rem, max-content)) [auto-fit];
+  grid-template-columns: repeat(auto-fit, minmax(30rem, -webkit-max-content));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, max-content));
   gap: 1.6rem 3.2rem;
   -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
 }
 
 .card {
   background-color: #fff;
   -webkit-box-shadow: 0px 10px 14px 0px rgba(0, 0, 0, 0.071);
-          box-shadow: 0px 10px 14px 0px rgba(0, 0, 0, 0.071);
+  box-shadow: 0px 10px 14px 0px rgba(0, 0, 0, 0.071);
   border-radius: 8px;
   overflow: hidden;
   position: relative;
@@ -92,8 +98,20 @@ body {
   position: relative;
   background-size: cover;
   height: 40rem;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.5))), url("/src/img/product-img.png");
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.5) 100%), url("/src/img/product-img.png");
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(0, 0, 0, 0.2)),
+      to(rgba(0, 0, 0, 0.5))
+    ),
+    url('/src/img/product-img.png');
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url('/src/img/product-img.png');
 }
 
 .card__product-info {
@@ -104,11 +122,11 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   z-index: 10;
   height: 100%;
   top: 0;
@@ -124,8 +142,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .card__product-stock--bold {
