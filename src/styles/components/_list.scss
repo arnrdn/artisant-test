@@ -1,0 +1,22 @@
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+
+  &__filter {
+    margin: 1.2rem 0;
+    width: 13rem;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, max-content));
+    gap: 1.6rem 3.2rem;
+    justify-content: space-evenly;
+  }
+}
