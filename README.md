@@ -17,7 +17,7 @@
 
 ## Live Demo
 
-- [Здесь вы можете посмотреть на "живую" версию приложения!](https://rdnrn.github.io/artisant-test/)
+- [Здесь вы можете посмотреть на "живую" версию приложения!](https://dancing-frangipane-9312ac.netlify.app)
 
 ## Getting Started
 
