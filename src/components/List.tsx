@@ -9,6 +9,7 @@ const List = () => {
     const axiosProducts = async () => {
       const response = await axios.get('https://artisant.io/api/products');
       setProducts(response.data.data.products);
+      console.log(products);
     };
     axiosProducts();
   }, []);
